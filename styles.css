@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.task-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#taskForm {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+input, select, button {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    flex: 1;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.task-list {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+    gap: 1rem;
+}
+
+.task-item.completed {
+    background: #e0e0e0;
+    text-decoration: line-through;
+}
+
+.task-content {
+    flex: 1;
+}
+
+.task-category {
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.category-work { background: #2196F3; }
+.category-personal { background: #FF9800; }
+.category-shopping { background: #9C27B0; }
+
+.task-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.task-actions button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+}
+
+.delete-btn {
+    background: #f44336;
+}
+
+.edit-btn {
+    background: #2196F3;
+}
+
+.dragging {
+    opacity: 0.5;
+}
